@@ -1,5 +1,4 @@
 package pro.sky.coursePaper2.Service;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import pro.sky.coursePaper2.Exception.QuestionNotFoundException;
 import pro.sky.coursePaper2.Question;
@@ -11,7 +10,7 @@ public class JavaQuestionServiceImpl implements QuestionService {
     private final Random random= new Random();
     private final QuestionRepository repository;
 
-    public JavaQuestionServiceImpl(@Qualifier("java") QuestionRepository repository) {
+    public JavaQuestionServiceImpl() {
         this.repository = repository;
     }
 

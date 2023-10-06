@@ -43,4 +43,9 @@ public class JavaQuestionRepository implements QuestionRepository{
     public Collection<Question> getAll() {
         return Collections.unmodifiableSet(questions); //создали ссылку немодифицированную
     }
+
+    @Override
+    public boolean getRandomQuestion() {
+        return false;
+    }
 }

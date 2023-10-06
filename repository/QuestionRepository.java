@@ -11,4 +11,6 @@ public interface QuestionRepository {
     Question remove(Question question);
 
     Collection<Question> getAll();
+
+    boolean getRandomQuestion();
 }
